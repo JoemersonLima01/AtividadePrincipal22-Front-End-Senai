@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="author" content="Joemerson"/>
+	<link href="css/style.css"   rel="stylesheet"    type="text/css"  media="all"/>
+	<link href="img/gasStation.png" rel="shortcut icon" type="image/png" media="all"/>
+	
+	<!--Mecanismos de busca-->
+	<meta name="robots" content="index, follow" />
+	<meta name="keywords" content="combustivel, combustível, app, web, webapp, etanol,
+	gasolina, melhor, senai, Joemerson, desenvolvedor, desenvolvimento, noturno, front, front-end, ti, html, css, javascript" />
+	<meta name="description" content="webapp desenvolvido para o curso desenvolvedor front-end Senai" />
+
+	<title>App Combustível</title>
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<h1>Gas Station Force</h1>
+			<hr />
+			<h2 id="result"></h2>
+		</div>
+	</header>
+	<main>
+		<div class="container">
+			<section class="backPage">
+			<form onsubmit="return false;">
+				<label>Valor da Gasolina:</label><br/>
+				<label>R$</label>
+				<input type="text" placeholder="0,00" id="gasolina" onkeydown="verificarInput(event);" /><br /><br />
+				<label>Valor do Etanol:</label><br/>
+				<label>R$</label>
+				<input type="text" placeholder="0,00" id="etanol" onkeydown="verificarInput(event);" /><br /><br />
+				<button onclick="return calculo();">Calcular</button>
+			</form>
+		</section>
+		</div>
+	</main>
+	<script src="js/script.js"></script>
+</body>
+</html>
